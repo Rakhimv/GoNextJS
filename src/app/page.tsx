@@ -26,7 +26,7 @@ export default function Home() {
     setLoad(true)
     if (email.trim() && name.trim()) {
       try {
-        const req = await axios.post("http://azjson.tech:6060/users", {
+        const req = await axios.post("https://azjson.tech:6060/users", {
           "name": name,
           "email": email,
         });
@@ -45,7 +45,7 @@ export default function Home() {
 
   const getUsers = async () => {
     try {
-      const req = await axios.get("http://azjson.tech:6060/users");
+      const req = await axios.get("https://azjson.tech:6060/users");
       if (req.status === 200) {
         setUsers(req.data);
       }
@@ -57,7 +57,7 @@ export default function Home() {
 
   const deleteUser = async (id: number) => {
     try {
-      const req = await axios.delete(`http://azjson.tech:6060/users/${id}`);
+      const req = await axios.delete(`https://azjson.tech:6060/users/${id}`);
       if (req.status === 200) {
         getUsers()
       }
