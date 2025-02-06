@@ -50,7 +50,7 @@ export default function Home() {
         setUsers(req.data);
       }
     } catch {
-      console.error("Ошибка при получении списка пользователей");
+      console.error("Ошибка при получении списка пользователей ");
     }
   }
 
