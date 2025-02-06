@@ -15,9 +15,12 @@
     "@mui/icons-material": "^6.4.3",
     "@mui/material": "^6.4.3",
     "@mui/material-nextjs": "^6.4.3",
+    "@types/axios": "^0.14.4",
+    "axios": "^1.7.9",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.84.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
